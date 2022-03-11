@@ -104,6 +104,7 @@ void N3_InitFilesystem(const char* path) {
 		// Define NitroFS como la carpeta inicial
 		sprintf(N3_ROOTFOLDER, "%s", "");
 		// Intenta inicializar NitroFS
+		//i(nitroFSInit(){ //old legacy code that does not longer work.
 		if(nitroFSInit(path)) {
 		} else {
 			// NitroFS ok
