@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------
+
+N3 Version 20111011 ALPHA
+--------------------------
+
+- Optimizado el uso de la VRAM para texturas.
+
+
+
+N3 Version 20110704 ALPHA
+--------------------------
+
+- Añadida documentacion
+- Añadida la funcion  N3_3dLayer(); la cual permite especificar la prioridad
+  de la capa 3D respecto las capas 2D.
+- Cerregidos bugs en las funciones N3_UnloadTexture(); y
+  N3_UpdateTexturesVram(); las cuales no registravan correctamente la descarga.
+  (Gracias a prizzio por el aviso).
+
+--------------------------------------------------------------------------------
