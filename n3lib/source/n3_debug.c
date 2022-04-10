@@ -36,25 +36,25 @@ void N3_Error(u16 code, const char* text, u32 value) {
 		// Fuera de rango.
 		case 101:
 			iprintf("%s\n", text);
-			iprintf("is out of range (0 - %d).\n", value);
+			iprintf("is out of range (0 - %ld).\n", value);
 			break;
 
 		// Slot o ID en uso.
 		case 102:
-			iprintf("%s %d\n", text, value);
+			iprintf("%s %ld\n", text, value);
 			iprintf("is already in use.\n");
 			break;
 
-		// Tamaño Ilegal
+		// Tamaï¿½o Ilegal
 		case 103:
 			iprintf("Illegal %s size.\n", text);
-			iprintf("Id: %d.\n", value);
+			iprintf("Id: %ld.\n", value);
 			break;
 
 		// Memoria RAM agotada
 		case 104:
 			iprintf("Out of RAM.\n");
-			iprintf("%d bytes can't be allocated.\n", value);
+			iprintf("%ld bytes can't be allocated.\n", value);
 			break;
 
 		// Fichero no encontrado
@@ -66,20 +66,20 @@ void N3_Error(u16 code, const char* text, u32 value) {
 
 		// Slot o ID sin datos, no usado.
 		case 106:
-			iprintf("%s %d\n", text, value);
+			iprintf("%s %ld\n", text, value);
 			iprintf("is empty.\n");
 			break;
 
 		// Memoria VRAM insuficiente
 		case 107:
 			iprintf("Out of VRAM.\n");
-			iprintf("%d bytes for %s\n", value, text);
+			iprintf("%ld bytes for %s\n", value, text);
 			iprintf("can't be allocated.\n");
 			break;
 
 		// Slot o ID no esta en uso.
 		case 108:
-			iprintf("%s %d\n", text, value);
+			iprintf("%s %ld\n", text, value);
 			iprintf("is not in use.\n");
 			break;
 
@@ -92,16 +92,9 @@ void N3_Error(u16 code, const char* text, u32 value) {
 
 
 	// Imprime el codigo de error
-	iprintf("Error code %d.\n", code);
+	iprintf("Error code %ld.\n", code);
 
 
 	// Deten la ejecucion del programa
-	while (1) {
-		swiWaitForVBlank();
-	}
-
+	while(1)swiWaitForVBlank();
 }
-
-
-
-
