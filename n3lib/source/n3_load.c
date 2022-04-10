@@ -105,7 +105,7 @@ void N3_InitFilesystem(const char* path) {
 		sprintf(N3_ROOTFOLDER, "%s", "");
 		// Intenta inicializar NitroFS
 		//i(nitroFSInit(){ //old legacy code that does not longer work.
-		if(nitroFSInit(path)) {
+		if(nitroFSInit(NULL)) {
 		} else {
 			// NitroFS ok
 			// Si es correcto, cambia al ROOT del NitroFS
