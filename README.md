@@ -5,8 +5,6 @@ features:<br>
 fully updated to work on latest libnds/devkitarm.<br>
 <h1> What is N3lib</h1></p>
 a random library 3d library made by knightfox75.<br>
-<h1> why did you called this n3lib++ instead of PA3D</h1></p>
-I think that it does not have way too much features to rename it.</p>
 <h1> Contributing. </h1>
 Please report issues in order to get them fixed.<br>
 Pull Requests are welcome, they must be aproved by me to prevent hacks/virus.</p>
